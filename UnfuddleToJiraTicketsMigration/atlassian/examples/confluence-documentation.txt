@@ -1,0 +1,183 @@
+{csv:output=wiki|autoNumber=true|sortColumn=1|sortIcon=true}
+Action, Category, Description, Required parameters, Optional parameters, Output formats
+"[#addAttachment] {anchor: addAttachment}", "Attachments", "Add an attachment.", "[#space], [#title], [#file] or [#content] and [#name]", "[#mime], [#comment], [#encoding]", 
+"[#addBlog] {anchor: addBlog}", "Misc", "Add a news (blog) entry.", "[#space], [#title], [#file] or [#content]", "[#dayOfMonth], [#month], [#year], [#labels], [#content2], [#findReplace], [#findReplaceRegex], [#noConvert], [#encoding]", 
+"[#addComment] {anchor: addComment}", "Comments", "Add a comment to a page or news. To add a threaded comment, specify parent comment id.", "[#space], [#title], [#comment] or [#content] or [#file]", "[#id], [#findReplace], [#findReplaceRegex], [#encoding]", 
+"[#addGroup] {anchor: addGroup}", "Groups", "Add a new group.", "[#group]", , 
+"[#addLabels] {anchor: addLabels}", "Labels", "Add labels to a page, news or space.", "[#space], [#labels]", "[#title], [#news], [#dayOfMonth], [#month], [#year]", 
+"[#addPage] {anchor: addPage}", "Pages", "Add a new page.", "[#space], [#title], [#content] or [#file]", "[#parent], [#labels], [#replace], [#content2], [#findReplace], [#findReplaceRegex], [#noConvert], [#encoding]", 
+"[#addPermissions] {anchor: addPermissions}", "Permissions", "Add permissions to page or space.", "[#space], [#permissions], [#userId] or [#group]", "[#title], [#children], [#descendents]", 
+"[#addSpace] {anchor: addSpace}", "Spaces", "Add a new space.", "[#space] or [#userId]", "[#title], [#description]", 
+"[#addUserToGroupWithFile] {anchor: addUserToGroupWithFile}", "Users", "Add users to groups from comma separated file.", "[#file]", "[#autoGroup], [#encoding]", 
+"[#addUserToGroup] {anchor: addUserToGroup}", "Users", "Add user to a group.", "[#userId], [#group]", "[#autoGroup]", 
+"[#addUserWithFile] {anchor: addUserWithFile}", "Users", "Add users from comma separated file.", "[#file]", "[#encoding]", 
+"[#addUser] {anchor: addUser}", "Users", "Add a new user.", "[#userId]", "[#userFullName], [#userEmail], [#userPassword]", 
+"[#addWatch] {anchor: addWatch}", "Watches", "Add watch to page or space for a userId. Confluence 3.5+.", "[#space] or [#id]", "[#title], user[#id], [#children], [#descendents]", 
+"[#checkPlugin] {anchor: checkPlugin}", "Plugins", "Verify that plugin is installed and enabled.", "[#plugin]", , 
+"[#convertToStorageFormat] {anchor: convertToStorageFormat}", , "Convert wiki markup to Confluence 4.x storage format. Confluence 4.x and higher.", , "[#content], [#content2], [#file], [#findReplace], [#findReplaceRegex], [#encoding]", 
+"[#copyAttachments] {anchor: copyAttachments}", "Attachments", "Copy all page attachments to another page.", "[#space], [#title]", "[#newSpace], [#newTitle], [#targetServer]", 
+"[#copyBlog] {anchor: copyBlog}", "Misc", "Copy blog contents to another blog.", "[#space], [#title], [#dayOfMonth] or [#month] or [#year]", "[#newSpace], [#newTitle], [#toDayOfMonth], [#toMonth], [#toYear], [#replace], [#findReplace], [#findReplaceRegex],         [#targetServer]", 
+"[#copyComments] {anchor: copyComments}", "Comments", "Copy all page comments to another page.", "[#space], [#title]", "[#newSpace], [#newTitle], [#commentPrefix], [#targetServer]", 
+"[#copyPageChildren] {anchor: copyPageChildren}", "Pages", "Copy children or all descendents of a page as descendents of another page.", "[#space], [#title], [#newSpace] or [#newTitle], [#parent]", "[#descendents], [#replace], [#findReplace], [#findReplaceRegex], [#copyAttachments], [#copyComments],          		[#copyLabels], [#commentPrefix], [#targetServer]", 
+"[#copyPage] {anchor: copyPage}", "Pages", "Copy contents to another page. Optionally copy children or all descendents as well.", "[#space], [#title], [#newSpace] or [#newTitle]", "[#parent], [#children], [#descendents], [#replace], [#findReplace], [#findReplaceRegex], [#copyAttachments], [#copyComments],         [#copyLabels],         		[#commentPrefix], [#targetServer]", 
+"[#copyPermissions] {anchor: copyPermissions}", "Permissions", "Copy page permissions from a page to another page.", "[#space], [#title]", "[#newSpace], [#newTitle]", 
+"[#copySpace] {anchor: copySpace}", "Spaces", "Copy space information and pages to another space.", "[#space], [#newSpace]", "[#title], [#description], [#findReplace], [#findReplaceRegex], [#replace], [#copyAttachments],          		[#copyLabels], [#copyComments], [#commentPrefix], [#targetServer]", 
+"[#exportData] {anchor: exportData}", , "Experimental - export participant data in a CLI compatible format.", "[#space]", "[#title], [#ancestors], [#descendents], [#children], [#labels], [#file], [#dateFormat], [#encoding]", 
+"[#exportSite] {anchor: exportSite}", , "Export site backup to a file.", "[#file]", "[#exportAttachments]", 
+"[#exportSpace] {anchor: exportSpace}", "Spaces", "Export a space to a file.", "[#space], [#exportType], [#file]", , 
+"[#getAttachmentList] {anchor: getAttachmentList}", "Lists", "Get list of attachments for a space or a page. Put to a file if specified.", "[#space]", "[#title], [#file], [#dateFormat], [#encoding]", 
+"[#getAttachment] {anchor: getAttachment}", "Attachments", "Get an attachment and put to a file.", "[#space] and [#title] or [#id], [#file]", "[#name], [#version], [#encoding]", 
+"[#getBlogList] {anchor: getBlogList}", "Lists", "Get list of blogs/news items. Put to a file if specified.", "[#space]", "[#labels], [#file], [#outputFormat], [#dateFormat], [#encoding]", "1 - default\\ 2 - CSV"
+"[#getBlogList] {anchor: getBlogList}", "Lists", "Get list of blogs/news items. Put to a file if specified.", "[#space]", "[#labels], [#file], [#outputFormat], [#dateFormat], [#encoding]", "1 - default\\ 2 - CSV"
+"[#getBlogSource] {anchor: getBlogSource}", "Misc", "Get wiki text for a news (blog) entry. Put to a file if specified.", "[#space], [#title]", "[#dayOfMonth], [#month], [#year], [#file], [#encoding]", 
+"[#getClientInfo] {anchor: getClientInfo}", "Info", "Get information about the this client tool.", , , 
+"[#getCommentList] {anchor: getCommentList}", "Lists", "List of comment information (id, dates, ...) for a page.", "[#space], [#title]", "[#file], [#dateFormat], [#encoding]", 
+"[#getComments] {anchor: getComments}", "Comments", "Get a formatted string of all comment text for a page.", "[#space], [#title]", "[#file], [#dateFormat], [#encoding]", 
+"[#getContentList] {anchor: getContentList}", "Lists", "Get list of content based on search terms.", "[#search]", "[#space], [#searchTypes], [#searchModified], [#count], [#userId]", 
+"[#getGroupList] {anchor: getGroupList}", "Lists", "Get list of groups. Put to a file if specified.", "[#userId]", "[#file], [#encoding]", 
+"[#getLabelList] {anchor: getLabelList}", "Lists", "Get list of labels. Default is mostPopular. Put to a file if specified.", , "[#space], [#title], [#news], [#mostPopular], recentlyUpdated, [#count], [#file], [#encoding]", 
+"[#getPageList] {anchor: getPageList}", "Lists", "Get list of pages. Put to a file if specified.", "[#space]", "[#title], [#ancestors], [#descendents], [#children], [#labels], [#file], [#outputFormat], [#dateFormat], [#encoding]", "1 - default\\ 2 - CSV with details"
+"[#getPageSource] {anchor: getPageSource}", "Pages", "Get page or news wiki text. Put to a file if specified.", "[#space] and [#title] or [#id]", "[#file], [#news], [#dayOfMonth], [#month], [#year], [#encoding]", 
+"[#getPermissionList] {anchor: getPermissionList}", "Lists", "Get list of all available, space, or page permissions. Put to a file if specified.", , "[#space], [#title], [#userId], [#file], [#encoding]", 
+"[#getPluginDownload] {anchor: getPluginDownload}", "Plugins", "Deprecated. Get url to download the plugin version. Version defaults to the latest version.", "[#plugin]", "[#version]", 
+"[#getPluginList] {anchor: getPluginList}", "Lists", "Deprecated. Get list of plugins. Use outputFormat=2 for extended information (longer time required).", , "[#plugin], [#file], [#encoding], [#outputFormat], [#count]", "1 - default\\ 2 - plugin exchange info"
+"[#getServerInfo] {anchor: getServerInfo}", "Info", "Get information about the Confluence server.", , , 
+"[#getSource] {anchor: getSource}", , "Get page or news wiki text. Put to a file if specified.", "[#space], [#title]", "[#file], [#news], [#dayOfMonth], [#month], [#year], [#encoding]", 
+"[#getSpaceList] {anchor: getSpaceList}", "Lists", "Get list of spaces. Put to a file if specified.", "[#space]", "[#personal], [#file], [#encoding]", 
+"[#getSpacePermissionList] {anchor: getSpacePermissionList}", "Lists", "Get CSV list of user, group, and anonymous space permissions. Defaults to all spaces. Confluence         3.5 or higher.", , "[#space], [#personal], [#file], [#encoding]", 
+"[#getSpace] {anchor: getSpace}", "Spaces", "Get space information.", "[#space]", , 
+"[#getTrashList] {anchor: getTrashList}", "Lists", "Get a list trash contents. Confluence 3.5+.", "[#space]", "[#count], [#dateFormat], [#file]", 
+"[#getUserList] {anchor: getUserList}", "Lists", "Get list of users. Put to a file if specified.", , "[#outputFormat], [#file], [#encoding]", "1 - default\\ 2 - CSV with details"
+"[#getUser] {anchor: getUser}", "Users", "Get user information.", "[#userId]", "[#file], [#encoding]", 
+"[#getWatchList] {anchor: getWatchList}", "Lists", "Get list of watchers on a page or space. Confluence 3.5+.", "[#space] or [#id]", "[#title], [#file]", 
+"[#installPlugin] {anchor: installPlugin}", "Plugins", "Install plugin.", "[#file]", , 
+"[#loadFiles] {anchor: loadFiles}", , "BETA. Load directory and files into a page hierarchy. HTM, HTML, and text files converted to pages. All other         files added as attachments.", "[#space], [#file]", "[#title], [#content], [#parent], user[#id], [#group], [#replace]", 
+"[#login] {anchor: login}", "Misc", "Login to remote server. Returns login token.", "[#password]", "[#user]", 
+"[#logout] {anchor: logout}", "Misc", "Logout of remote server.", , , 
+"[#modifyPage] {anchor: modifyPage}", "Pages", "Modify current page content by adding content before or afterCreate or update a page.", "[#space] and [#title] or [#id], [#content] or [#file]", "[#parent], [#labels], [#comment], [#minor], [#content2], [#findReplace], [#findReplaceRegex], [#noConvert], [#encoding]", 
+"[#movePage] {anchor: movePage}", "Pages", "Move a page.", "[#space], [#title]", "[#parent]", 
+"[#removeAllPermissionsForGroup] {anchor: removeAllPermissionsForGroup}", "Groups", "Remove all permissions for a group.", "[#group]", , 
+"[#removeAttachment] {anchor: removeAttachment}", "Attachments", "Remove an attachment.", "[#space], [#title] or [#id], [#name]", , 
+"[#removeBlog] {anchor: removeBlog}", "Misc", "Remove a news (blog) entry.", "[#space], [#title]", "[#dayOfMonth], [#month], [#year]", 
+"[#removeComment] {anchor: removeComment}", "Comments", "Remove a specific comment.", "[#id]", "[#descendents]", 
+"[#removeComments] {anchor: removeComments}", "Comments", "Remove all comments from a page.", "[#space], [#title]", , 
+"[#removeContent] {anchor: removeContent}", , "Remove content (pages, news) by id. Option to remove descendents.", "[#id]", "[#descendents]", 
+"[#removeGroup] {anchor: removeGroup}", "Groups", "Remove a group.", "[#group]", "[#defaultGroup]", 
+"[#removeLabels] {anchor: removeLabels}", "Labels", "Remove labels from a page, news or space.", "[#space], [#labels]", "[#title], [#news], [#dayOfMonth], [#month], [#year]", 
+"[#removePage] {anchor: removePage}", "Pages", "Remove a page and, optionally, all descendents.", "[#space], [#title]", "[#descendents]", 
+"[#removePermissions] {anchor: removePermissions}", "Permissions", "Remove permissions from page or space.", "[#space], [#permissions], [#userId] or [#group]", "[#title], [#children], [#descendents]", 
+"[#removeSpace] {anchor: removeSpace}", "Spaces", "Remove a space.", "[#space] or [#userId]", , 
+"[#removeTrash] {anchor: removeTrash}", , "Permanently remove trash item. Confluence 3.5+.", "[#space]", "[#title], [#id]", 
+"[#removeUserFromGroupWithFile] {anchor: removeUserFromGroupWithFile}", "Users", "Remove users from groups from comma separated file.", "[#file]", "[#encoding]", 
+"[#removeUserFromGroup] {anchor: removeUserFromGroup}", "Users", "Remove user from a group.", "[#userId], [#group]", , 
+"[#removeUserWithFile] {anchor: removeUserWithFile}", "Users", "Remove users from comma separate file.", "[#file]", "[#encoding]", 
+"[#removeUser] {anchor: removeUser}", "Users", "Remote a user.", "[#userId]", , 
+"[#renamePage] {anchor: renamePage}", "Pages", "Rename or move a page.", "[#space], [#title]", "[#newTitle], [#parent]", 
+"[#renderBlog] {anchor: renderBlog}", "Render", "Render a news (blog) entry. Put to a file if specified.", "[#space], [#title]", "[#dayOfMonth], [#month], [#year], [#file], [#clean], [#encoding]", 
+"[#renderPage] {anchor: renderPage}", "Pages", "Render page or news.", "[#space], [#title]", "[#file], [#news], [#dayOfMonth], [#month], [#year], [#clean], [#encoding]", 
+"[#renderRequest] {anchor: renderRequest}", "Render", "Render url based request.", "[#request]", "[#requestParameters], [#space], [#title], [#file], [#encoding]", 
+"[#render] {anchor: render}", "Render", "Render content, page, or new. If content is specified, it is rendered in the context of the page.", "[#space], [#title]", "[#content], [#file], [#news], [#dayOfMonth], [#month], [#year], [#clean], [#findReplace], [#findReplaceRegex], [#encoding]", 
+"[#restoreExport] {anchor: restoreExport}", , "Restore export from file in the Confluence home/restore directory.", "[#file]", , 
+"[#runFromCsv] {anchor: runFromCsv}", "Run", "Run actions generated from a CSV file.", "[#file]", "[#common], [#propertyFile], [#continue], [#quiet], [#simulate], [#encoding], [#findReplace], [#findReplaceRegex]", 
+"[#runFromList] {anchor: runFromList}", "Lists", "Run actions for each entry in a list. When file is provided, each action in the file augmented by the common         parameter will be run for each entry. Otherwise, just the action specified by the common parameter will be run. @entry@ will         be replaced with the entry value.", "[#list]", "[#file], [#common], [#continue], [#quiet], [#simulate], [#encoding], [#findReplace], [#findReplaceRegex]", 
+"[#runFromPageList] {anchor: runFromPageList}", "Lists", "Run actions for each page from an page list based subsetting criteria.", "[#space]", "[#title], [#ancestors], [#descendents], [#children], [#labels], [#common], [#continue], [#simulate], [#file], [#encoding],         [#findReplace], [#findReplaceRegex]", 
+"[#runFromSpaceList] {anchor: runFromSpaceList}", "Lists", "Run actions for each space. Defaults to global spaces only.", , "[#space], [#personal], [#common], [#continue], [#simulate], [#file], [#encoding], [#findReplace], [#findReplaceRegex]", 
+"[#runFromSql] {anchor: runFromSql}", "Run", "Run actions generated.by SQL provided by the sql parameter, a file, or standard input", "[#sql] or [#file] or standard input", "[#common], [#host], [#driver], [#database], host, [#port], [#url], [#dbUser], [#dbPassword],         	 [#propertyFile], [#continue], [#simulate], [#encoding], [#findReplace], [#findReplaceRegex]", 
+"[#run] {anchor: run}", "Run", "Run actions from a file or standard input.", "[#file] or standard input", "[#common], [#continue], [#simulate], [#encoding], [#findReplace], [#findReplaceRegex]", 
+"[#storeBlog] {anchor: storeBlog}", "Misc", "Add or update a news (blog) entry.", "[#space], [#title], [#file] or [#content]", "[#dayOfMonth], [#month], [#year], [#labels], [#content2], [#findReplace], [#findReplaceRegex], [#noConvert], [#encoding]", 
+"[#storePage] {anchor: storePage}", "Pages", "Create or update a page.", "[#space] and [#title] or [#id], [#content] or [#file]", "[#parent], [#labels], [#comment], [#minor], [#content2], [#findReplace], [#findReplaceRegex], [#noConvert], [#encoding]", 
+{csv}
+
+
+h3. Parameters
+{include:ACLI:Shared - tips for documentation}
+{csv:output=wiki|autoNumber=true|sortColumn=1|sortIcon=true}
+Parameter, Short, Value, Description
+"action {anchor:action}", "a", "(/)", 
+"ancestors {anchor:ancestors}", , "(x)", "Ancestors for a page."
+"append {anchor:append}", , "(x)", "For some actions using file, append will append output to the existing file."
+"autoGroup {anchor:autoGroup}", , "(x)", "Groups are automatically added when referenced in add user functions."
+"children {anchor:children}", , "(x)", "Immediate children for a page."
+"clean {anchor:clean}", , "(x)", "Rendered data as just a single block of HTML within a div, without the HTML preamble and stylesheet"
+"comment {anchor:comment}", , "(/)", "Text for comment or attachment comment or page update comment."
+"commentPrefix {anchor:commentPrefix}", , "(/)", "Text added before copied comments. Example: Originally posted by \@creator\@ on \@createdTime\@"
+"common {anchor:common}", , "(/)", "Common parameter string added to all run actions."
+"content {anchor:content}", "c", "(/)", "Content for page, attachment or comment. (default: )"
+"content2 {anchor:content2}", , "(/)", "Content for page added after content and file content."
+"continue {anchor:continue}", , "(x)", "Continue processing even after errors are encountered."
+"copyAttachments {anchor:copyAttachments}", , "(x)", "Copy attachments when copying a page."
+"copyComments {anchor:copyComments}", , "(x)", "Copy comments when copying a page."
+"copyLabels {anchor:copyLabels}", , "(x)", "Copy labels when copying a page or space."
+"count {anchor:count}", , "(/)", "Maximum number of entries to return. (default: 2147483647)"
+"database {anchor:database}", , "(/)", "Database name is required for SQL actions."
+"dateFormat {anchor:dateFormat}", , "(/)", "Format string for date in Java SimpleDateFormat, default is client date format."
+"dayOfMonth {anchor:dayOfMonth}", , "(/)", "Day of month for blog/news entry. Use negative values for going back to previous months. (default: 0)"
+"dbPassword {anchor:dbPassword}", , "(/)", "Database user password. Defaults to password."
+"dbUser {anchor:dbUser}", , "(/)", "Database user name. Defaults to user."
+"debug {anchor:debug}", , "(x)", "Requests detail debug output. Optional for all actions."
+"defaultGroup {anchor:defaultGroup}", , "(/)", "Default group to move users on removeGroup action."
+"descendents {anchor:descendents}", , "(x)", "All descendents for a page."
+"description {anchor:description}", , "(/)", "Descriptive text."
+"driver {anchor:driver}", , "(/)", "JDBC driver class or predefined value: postgresql, mysql, mssql, oracle, or db2400. Required for SQL actions."
+"encoding {anchor:encoding}", , "(/)", "Character encoding (character set) for text based file content - must be an encoding supported by your JAVA platform."
+"exportAttachments {anchor:exportAttachments}", , "(x)", "Export attachments for site export. Automatically done for space exports."
+"exportType {anchor:exportType}", , "(/)", "Export type (XML, HTML, PDF) for space export - default is XML. SPACE or PARTICIPANTS for export data - default is SPACE."
+"file {anchor:file}", "f", "(/)", "Path to file based content or result output. Use - for standard input."
+"findReplace {anchor:findReplace}", , "(/)", "Find and replace text. Comma separated list of colon separated pairs. Single quote values containing a delimiter. Embedded         quotes must be doubled."
+"findReplaceRegex {anchor:findReplaceRegex}", , "(/)", "Find and replace text with a regular expression. Comma separated list of colon separated pairs. Single quote values         containing a delimiter. Embedded quotes must be doubled."
+"group {anchor:group}", , "(/)", "Group name."
+"help {anchor:help}", , "(x)", "Prints this help message."
+"host {anchor:host}", , "(/)", "Database host server for SQL actions. Not used if url is provided. (default: localhost)"
+"id {anchor:id}", , "(/)", "Numeric id of an item."
+"labels {anchor:labels}", , "(/)", "Comma separated list of labels."
+"list {anchor:list}", , "(/)", "Comma separated list of entries. Single quote values containing a delimiter. Embedded quotes must be doubled."
+"login {anchor:login}", , "(/)", "Login token from previous login request."
+"loginFromStandardInput {anchor:loginFromStandardInput}", "l", "(x)", "Get login token from standard input."
+"mime {anchor:mime}", , "(/)", "Attachment mime type if you want to override determination by file extension."
+"minor {anchor:minor}", , "(x)", "Indicate minor update (no notifications) for a page update."
+"month {anchor:month}", , "(/)", "Month for blog/news entry. Defaults to current month. Confluence 3.5 and above. (default: 0)"
+"mostPopular {anchor:mostPopular}", , "(x)", "Request most popular labels."
+"name {anchor:name}", , "(/)", "File name for attachment."
+"newSpace {anchor:newSpace}", , "(/)", "New space key for copied or moved page."
+"newTitle {anchor:newTitle}", , "(/)", "New title of copied or renamed page."
+"news {anchor:news}", , "(x)", "Parameters represent a news item."
+"noConvert {anchor:noConvert}", , "(x)", "Do not convert content from wiki to storage format for Confluence version 4.0 and above. Unless otherwise known, content is         considered as wiki markup and converted."
+"outputFormat {anchor:outputFormat}", , "(/)", "Specify output format for an action. (default: 1)"
+"parent {anchor:parent}", , "(/)", "Parent page title."
+"password {anchor:password}", "p", "(/)", "User password for remote login."
+"permissions {anchor:permissions}", , "(/)", "Comma separated list of permissions.         	Page permissions:         		view, edit         	Space permissions:         		viewspace, editspace, comment, editblog, createattachment, removepage, removecomment,          		removeblog, removeattachment, removemail, setpagepermissions, setspacepermissions,          		exportpage, exportSpace"
+"personal {anchor:personal}", , "(x)", "Include personal spaces."
+"plugin {anchor:plugin}", , "(/)", "Plugin key or partial key for matching."
+"port {anchor:port}", , "(/)", "Database host port for SQL actions. Optional, defaults to database default. Not used if url is provided."
+"propertyFile {anchor:propertyFile}", , "(/)", "Property file with mapping information."
+"quiet {anchor:quiet}", , "(x)", "Limit some output messages. Optional for all actions."
+"recentlyUsed {anchor:recentlyUsed}", , "(x)", "Request recently used labels."
+"replace {anchor:replace}", , "(x)", "Replace existing entity."
+"request {anchor:request}", , "(/)", "URL fragment for a request."
+"requestParameters {anchor:requestParameters}", , "(/)", "URL request parameters"
+"search {anchor:search}", , "(/)", "Search query."
+"searchModified {anchor:searchModified}", , "(/)", "When modified - LASTDAY, LASTWEEK, LASTMONTH, LASTYEAR."
+"searchTypes {anchor:searchTypes}", , "(/)", "Type of content, comma separated list: page, blogpost, mail, comment, attachment, spacedescription, personalinformation"
+"server {anchor:server}", "s", "(/)", "Server URL."
+"service {anchor:service}", , "(/)", "Service address extension. (default: /rpc/soap-axis/confluenceservice-v1)"
+"simulate {anchor:simulate}", , "(x)", "Simulate running actions. Log the action that would be taken."
+"space {anchor:space}", , "(/)", "Space key."
+"sql {anchor:sql}", , "(/)", "SQL select statement used to generate a run script."
+"targetPassword {anchor:targetPassword}", , "(/)", "Target server user password."
+"targetServer {anchor:targetServer}", , "(/)", "Target server url for copy requests."
+"targetUser {anchor:targetUser}", , "(/)", "Target server user."
+"title {anchor:title}", "t", "(/)", "Page or news title."
+"toDayOfMonth {anchor:toDayOfMonth}", , "(/)", "For copied blog, day of month for blog/news entry. Defaults to dayOfMonth. (default: 0)"
+"toMonth {anchor:toMonth}", , "(/)", "For copied blog, month for blog/news entry. Defaults to month. Confluence 3.5 and above. (default: 0)"
+"toYear {anchor:toYear}", , "(/)", "For copied blog, year for blog/news entry. Defaults to year. Confluence 3.5 and above. (default: 0)"
+"url {anchor:url}", , "(/)", "Action specific setting. Example: Database access url for SQL actions. Optional when host is provided."
+"user {anchor:user}", "u", "(/)", "User name for remote login. (default: automation)"
+"userEmail {anchor:userEmail}", , "(/)", "User email for user management actions."
+"userFullName {anchor:userFullName}", , "(/)", "User name for user management actions."
+"userId {anchor:userId}", , "(/)", "User id for user management and other actions."
+"userPassword {anchor:userPassword}", , "(/)", "User password for user management actions."
+"verbose {anchor:verbose}", "v", "(x)", "Requests verbose output to help with problem determination. Optional for all actions."
+"version {anchor:version}", , "(/)", "Item version."
+"year {anchor:year}", , "(/)", "Year for blog/news entry. Defaults to current year. Confluence 3.5 and above. (default: 0)"
+{csv}
+
