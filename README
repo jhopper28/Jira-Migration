@@ -1,8 +1,6 @@
 
 Unfuddle to Jira Migration
 
-
-
 I. Tickets migration
 	1. Download the project TicketsMigration and import it.
 	2. Request a backup from Unfuddle
@@ -38,7 +36,19 @@ II. SVN Repositories Migration
 	6. Go to the SVN Importer and import your dump file.
 	7. Create a working copy of your new repository with svn checkout and you're good to go!
 	
-
+/***/
+	If you want to create links between the commits and the issues, you may want to do the following before actually creating your final dump file.
+		1. Download the project SVNMigration and import it.
+		2. Edit the pre revision property change hook for your repository (in the hook tab in the properties of your repository in VisualSVN)
+		You can either use the template or copy/paste the content of the pre revision hook text file which is in the SVNMigration folder.
+		2. Open the file changeRev and update the last revision number as well as the repository location (the svn info command provides it if you ignore it). Run the changeRev script: it will get all the commit messages from your project. 
+		3. Edit the configurations of the SVNMigration project.
+			The first argument should be either bat or sh (it will become the extensions of the script files) depending on your os.
+			The second argument should be the url where you new local svn repository is located (the same location as in #2).
+		4. For everything to work, you need to dive a bit into the code and edit the Changesets.java file:
+			Around line 100, you need to write which project match which revision. More explanations are available as comments in the file.				
+		5. Run the SVNMigration project: it will create a file messagesToUpdate which contains the commands to change the commits.
+		6. Execute the messagesToUpdate script and finish the SVN import once it's completed (go back to II. 4)
 	
 	
 
